@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="mother">
+      <div class="input">
+        <input class="form" type="text" placeholder="Enter City" />
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+      <div id="weather-image">
+        <img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+          alt=""
+        />
+        <h1>18 <sup> &deg;c</sup></h1>
+        <p>Broken Clouds</p>
+      </div>
+
+      <div>
+        <div class="humidity">
+          <div id="hum-data">
+            <span class="material-symbols-outlined"> water </span>
+            <div>
+            <h3>55%</h3>
+            <p>Humidity</p>
+          </div>
+          </div>
+
+          <div>
+            <span class="material-symbols-outlined"> air </span>
+            <div>
+            <h3>0Km/h</h3>
+            <p>wind speed</p>
+          </div>
+        </div>
+      </div>
+      <footer> 
+        <p>This project was coded by <a href="https://github.com/akuahamda">Hamda,</a>
+          is <a href="https://github.com/akuahamda">open source on github</a> and
+
+        </p>
+        
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
