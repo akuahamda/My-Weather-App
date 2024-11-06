@@ -9,20 +9,25 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
   </head>
   <body>
     <div class="mother">
-      <div class="input">
+      <form class="input">
         <input class="form" type="text" placeholder="Enter City" />
-        <span class="material-symbols-outlined"> search </span>
-      </div>
+        <button type="submit">        
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </form>
+      <h1 class="city-name"></h1>
       <div id="weather-image">
         <img
           src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
           alt=""
         />
-        <h1>18 <sup> &deg;c</sup></h1>
-        <p>Broken Clouds</p>
+        <h1> <span id="temp"> 18</span> <sup> &deg;c</sup></h1>
+        <p id="describ">Broken Clouds</p>
       </div>
 
       <div>
@@ -30,7 +35,7 @@
           <div id="hum-data">
             <span class="material-symbols-outlined"> water </span>
             <div>
-            <h3>55%</h3>
+            <h3 id="humid">55%</h3>
             <p>Humidity</p>
           </div>
           </div>
@@ -38,19 +43,20 @@
           <div>
             <span class="material-symbols-outlined"> air </span>
             <div>
-            <h3>0Km/h</h3>
+            <h3 id="wind">0Km/h</h3>
             <p>wind speed</p>
           </div>
         </div>
       </div>
       <footer> 
         <p>This project was coded by <a href="https://github.com/akuahamda">Hamda,</a>
-          is <a href="https://github.com/akuahamda">open source on github</a> and
+          is <a href="https://github.com/akuahamda">open-source on github</a> and <a href="https://incredible-frangipane-a0f62e.netlify.app/">hosted on Netlify</a>
 
         </p>
         
       </footer>
     </div>
+    <!-- <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script> -->
     <script src="index.js"></script>
   </body>
 </html>

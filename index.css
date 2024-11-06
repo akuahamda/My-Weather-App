@@ -7,6 +7,7 @@ body{
     background-image: url('https://img.freepik.com/premium-photo/empty-background-scene-dark-street-reflection-wet-asphalt-rays-colorful-neon-light_1028938-419036.jpg?semt=ais_hybrid');
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 
 
     
@@ -76,4 +77,13 @@ footer p {
     color: white;
     margin-top: 15px;
     font-size: 18px;
+}
+button{ 
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+#temp { 
+    font-size:45px ;
 }
