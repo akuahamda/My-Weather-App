@@ -20,10 +20,10 @@ body{
 .mother{ 
     background-color: white;
     min-width: 35%;
-    background: rgba(255, 255, 255, 0.377);
+    background: rgba(160, 235, 253, 0.577);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 13px );
--webkit-backdrop-filter: blur( 13px );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
 border-radius: 10px;
 border: 1px solid rgba(255, 255, 255, 0.863);
 padding: 20px;
@@ -52,19 +52,19 @@ padding: 20px;
 }
 #weather-image{ 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     color: white;
 }
 #weather-image img{ 
     
-    width: 30%;
+    /* width: 25%; */
 }
 .humidity{ 
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .humidity > div  { 
     display: flex;
@@ -72,6 +72,17 @@ padding: 20px;
     padding: 10px;
     color: white;
 
+}
+.forecast{ 
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.forecast-icon{ 
+    font-size: 30px;
+    padding: 10px;
 }
 footer p { 
     color: white;
@@ -87,3 +98,4 @@ button{
 #temp { 
     font-size:45px ;
 }
+
